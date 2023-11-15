@@ -8,4 +8,6 @@
 yarn add @aws-amplify/cli
 
 yarn amplify configure
+
+yarn amplify init
 ```
