@@ -20,12 +20,13 @@
     "lint": "eslint --ext .ts,.tsx,.js,.jsx .",
     "lint:fix": "eslint --fix --ext .ts,.tsx,.js,.jsx .",
     "type-check": "tsc --noEmit",
-    "console": "amplify console",
-    "env:add": "amplify env add",
-    "env:checkout": "amplify env checkout",
-    "env:remove": "amplify env remove",
     "setup:dev": "amplify pull --appId $APP_ID --envName dev -y",
     "setup:prod": "amplify pull --appId $APP_ID --envName prod -y",
+    "console": "amplify console",
+    "env:add": "amplify env add",
+    "env:remove": "amplify env remove",
+    "use:dev": "amplify env checkout dev -y",
+    "use:prod": "amplify env checkout prod -y",
     "deploy": "amplify publish -y"
   },
   "dependencies": {
