@@ -3,7 +3,7 @@
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
-    "framework": "react",
+    "framework": "nextjs",
     "config": {
       "SourceDir": ".",
       "DistributionDir": "./dist/",
