@@ -7,6 +7,7 @@ on:
 
 env:
   node-version: 20.x
+  amplify-app-id: ${{ secrets.AMPLIFY_APP_ID }}
 
 jobs:
   cd:
@@ -30,9 +31,9 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ env.node-version }}-${{ hashFiles('**/yarn.lock') }}
       - name: Install dependencies
         run: yarn install --frozen-lockfile --non-interactive --production
-      - name: Checkout prod env
-        run: yarn env:checkout prod
-      - name: Pull remote state
-        run: yarn pull
+      - name: Setup environment for prod
+        run: yarn setup:prod
+        env:
+          APP_ID: ${{ env.amplify-app-id }}
       - name: Deploy
         run: yarn deploy
