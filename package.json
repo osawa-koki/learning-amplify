@@ -21,6 +21,9 @@
     "lint:fix": "eslint --fix --ext .ts,.tsx,.js,.jsx .",
     "type-check": "tsc --noEmit",
     "console": "amplify console",
+    "env:add": "amplify env add",
+    "env:checkout": "amplify env checkout",
+    "env:remove": "amplify env remove",
     "deploy": "amplify publish -y"
   },
   "dependencies": {
