@@ -24,7 +24,9 @@ module.exports = {
     'node_modules',
     'build',
     'dist',
-    'next-env.d.ts'
+    'next-env.d.ts',
+    '**/*.js',
+    'amplify'
   ],
   rules: {
   }
