@@ -10,6 +10,11 @@
       "StackName": "amplify-learningamplify-dev-224256",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:938385028059:stack/amplify-learningamplify-dev-224256/e3af9790-83bc-11ee-898c-0e1ce97a7627",
       "AmplifyAppId": "d1u3nuf3jlcawy"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
     }
   }
 }
