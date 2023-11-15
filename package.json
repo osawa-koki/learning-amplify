@@ -24,6 +24,7 @@
     "env:add": "amplify env add",
     "env:checkout": "amplify env checkout",
     "env:remove": "amplify env remove",
+    "pull": "amplify pull",
     "deploy": "amplify publish -y"
   },
   "dependencies": {
