@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@aws-amplify/cli": "^12.8.2"
+  },
+  "name": "learning-amplify",
+  "version": "1.0.0",
+  "description": "🌭🌭🌭 `AWS Amplify`を学習してみる！",
+  "main": "index.js",
+  "repository": "https://github.com/osawa-koki/learning-amplify.git",
+  "author": "osawa-koki <koki@osawa.dev>",
+  "license": "Apache-2.0",
+  "private": false,
+  "engines": {
+    "node": ">= 20.0.0",
+    "yarn": ">= 1.22.0"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
