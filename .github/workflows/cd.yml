@@ -31,8 +31,8 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ env.node-version }}-${{ hashFiles('**/yarn.lock') }}
       - name: Install dependencies
         run: yarn install --frozen-lockfile --non-interactive --production
-      - name: Setup environment for prod
-        run: yarn setup:prod
+      - name: Pull environment for prod
+        run: yarn pull:prod
         env:
           APP_ID: ${{ env.amplify-app-id }}
       - name: Deploy
