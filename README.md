@@ -6,4 +6,6 @@
 
 ```shell
 yarn add @aws-amplify/cli
+
+yarn amplify configure
 ```
