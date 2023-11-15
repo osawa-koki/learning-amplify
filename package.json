@@ -24,7 +24,8 @@
     "env:add": "amplify env add",
     "env:checkout": "amplify env checkout",
     "env:remove": "amplify env remove",
-    "pull": "amplify pull",
+    "setup:dev": "amplify pull --appId $APP_ID --envName dev -y",
+    "setup:prod": "amplify pull --appId $APP_ID --envName prod -y",
     "deploy": "amplify publish -y"
   },
   "dependencies": {
