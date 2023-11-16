@@ -9,7 +9,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm use 18.13add
+        - nvm use 18.13
         - yarn install --frozen-lockfile --non-interactive --production
     build:
       commands:
