@@ -6,9 +6,8 @@
     "framework": "nextjs",
     "config": {
       "SourceDir": "./src/",
-      "DistributionDir": "./dist/",
-      "BuildCommand": "yarn build",
-      "StartCommand": "yarn start"
+      "DistributionDir": "./out/",
+      "BuildCommand": "yarn run build"
     }
   },
   "providers": [
