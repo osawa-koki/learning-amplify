@@ -8,7 +8,7 @@
     "url": "https://github.com/osawa-koki/learning-amplify.git"
   },
   "engines": {
-    "node": ">= 16.0.0",
+    "node": ">= 20.0.0",
     "yarn": ">= 1.22.0"
   },
   "private": false,
