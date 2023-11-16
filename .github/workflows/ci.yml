@@ -1,0 +1,37 @@
+name: ci
+
+on: [ push ]
+
+jobs:
+  check:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        node-version: [ 18.x, 20.x ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
+          cache-dependency-path: yarn.lock
+      - name: Restore cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('yarn.lock') }}-
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile --non-interactive
+      - name: Test
+        run: yarn test
+      - name: Lint
+        run: yarn lint
+      - name: Type check
+        run: yarn type-check
+      - name: Test build
+        run: yarn build
