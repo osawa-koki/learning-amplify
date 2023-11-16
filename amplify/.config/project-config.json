@@ -6,7 +6,7 @@
     "framework": "nextjs",
     "config": {
       "SourceDir": "./src/",
-      "DistributionDir": "./out/",
+      "DistributionDir": "./.next/",
       "BuildCommand": "yarn run build"
     }
   },
