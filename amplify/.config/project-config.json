@@ -3,10 +3,10 @@
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
-    "framework": "nextjs",
+    "framework": "Next.js - SSG",
     "config": {
       "SourceDir": "./src/",
-      "DistributionDir": "./.next/",
+      "DistributionDir": "./out/",
       "BuildCommand": "yarn run build"
     }
   },
